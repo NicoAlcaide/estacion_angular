@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: '/estacion',
   supportedLocales: {
   "en-US": ""
 },

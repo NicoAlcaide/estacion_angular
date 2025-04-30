@@ -2,19 +2,19 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/',
+  baseHref: '/estacion/',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "route": "/"
+    "route": "/estacion"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 23562, hash: 'a947d7998b0ce7b52c23b68d29820f2c0da4a2d34f32cf58e1dfcf34912ffab1', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 17136, hash: 'cf0ad462954ee6692d465b2dc13110a4962d8c2e56612d7c7a73615a85a46f30', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'index.html': {size: 49737, hash: 'ac19ec7e6fbda3f9098c4eb5ea9212f7a4b429828dee6c3ba8aa4024bcf3ad0a', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 23571, hash: '328691305683b4077de10269229d644740c03d3ea5bbcbf0cc9b5a3c61d81370', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 17145, hash: '01cf77be14a9007b5c724aad67ae2de3ca9c899f2bae6eb385464241c3122867', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'index.html': {size: 49746, hash: '48804ab91b723010c5ae2d4481b865da132fd1d458a9aed81b38a505799f09ff', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
     'styles-36AW6TKX.css': {size: 6979, hash: 'vY6tjD/ce7M', text: () => import('./assets-chunks/styles-36AW6TKX_css.mjs').then(m => m.default)}
   },
 };
