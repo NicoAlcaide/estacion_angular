@@ -1,0 +1,30 @@
+<main>
+  <section id="mostrar-datos">
+    <h2>Datos Recogidos</h2>
+    <button (click)="obtenerDatos()">Descargar Datos del canal</button>
+
+    <table id="tabla-datos">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>CO2</th>
+          <th>Ruido</th>
+          <th>Luminosidad</th>
+          <th>Presión</th>
+          <th>Viento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dato of datos">
+          <td>{{ dato.created_at }}</td>
+          <td>{{ dato.field1 }} ppm</td>
+          <td>{{ dato.field2 }} dB</td>
+          <td>{{ dato.field3 }} lux</td>
+          <td>{{ dato.field4 }} hPa</td>
+          <td>{{ dato.field5 }} km/h</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+</main>

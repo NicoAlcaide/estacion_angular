@@ -1,0 +1,18 @@
+<main>
+  <section id="enviar-datos">
+   <div>
+	 <h2>Descarga de fichero CSV de pruebas</h2>
+     <p>Puede descargar un fichero con datos de pruebas en este enlace:</p>
+     <a href="assets/feeds.csv" download="feeds.csv" style="text-decoration: none;">  <button>Descargar CSV</button>  </a>
+	</div>
+
+	<div>
+	  <h2>Enviar CSV</h2>
+      <input type="file" accept=".csv" (change)="seleccionarArchivo($event)">
+	  <button type="button" (click)="enviarCSV()">Enviar CSV a ThingSpeak</button>
+	</div>
+  </section>
+</main>
+
+
+

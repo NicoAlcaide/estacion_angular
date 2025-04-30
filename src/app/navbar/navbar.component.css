@@ -1,0 +1,15 @@
+/* CSS para la cabecera fija */
+
+mat-toolbar {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+ 
+  padding: 0 20px;
+}
+
+
+.nav-container {
+  display: flex;
+  gap: 20px; /* Espaciado entre elementos */
+}

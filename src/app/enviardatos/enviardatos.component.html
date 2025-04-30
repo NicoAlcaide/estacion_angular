@@ -1,0 +1,27 @@
+<main>
+  <section id="enviar-datos">
+    <h2>Enviar Datos</h2>
+    <form>
+  <label>CO2:</label>
+  <input type="number" [(ngModel)]="datos.co2" name="co2" placeholder="ppm"> <!-- ✅ Agregar name -->
+
+  <label>Ruido:</label>
+  <input type="number" [(ngModel)]="datos.ruido" name="ruido" placeholder="dB">
+
+  <label>Luminosidad:</label>
+  <input type="number" [(ngModel)]="datos.luminosidad" name="luminosidad" placeholder="lux">
+
+  <label>Presión atmosférica:</label>
+  <input type="number" [(ngModel)]="datos.presion" name="presion" placeholder="hPa">
+
+  <label>Velocidad del viento:</label>
+  <input type="number" [(ngModel)]="datos.viento" name="viento" placeholder="km/h">
+
+  <button type="button" (click)="enviarDatos()">Enviar Datos</button>
+</form>
+
+
+  </section>
+</main>
+
+

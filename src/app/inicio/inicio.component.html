@@ -1,0 +1,31 @@
+<main class="bloquecentral">
+<div class="inicio-container">
+    <div>
+        <h2>Nicolás Alcaide Delaire</h2>
+    </div>
+
+    <div>
+        <h2>Que vamos a poder hacer desde esta web:</h2>
+        <ul>
+            <li>Enviar los datos por fecha para que se almacene en nuestro canal de IoT ThingSpeak.</li>
+            <li>Enviar un fichero que contenga los datos de varias mediciones en un fichero .CSV a nuestro canal.</li>
+            <li>Consultar los datos del canal.</li>
+            <li>Borrar toda la información almacenada.</li>         
+        </ul>
+    </div>
+
+    <div>
+        <p>Como estamos utilizando un canal de una cuenta gratuita, tenemos la limitación de 20 segundos entre cada envío de datos a través de la API.</p>
+        <p>Tenga en cuenta este dato cuando suba información manualmente o cuando suba un fichero con los datos.</p>
+        <p>Puede acceder aquí: <a href="https://thingspeak.mathworks.com/channels/2936934">Al canal ThingSpeak del alumno</a></p>
+    </div>
+    
+    <div>
+        <p>Puede borrar todos los datos del canal pulsando el siguiente botón:</p>
+        <section id="limpiar-canal">
+        <button type="button" (click)="limpiarDatos()">Limpiar Canal de ThingSpeak</button>  
+			
+        </section>
+    </div>
+</div>
+</main>
