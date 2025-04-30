@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
+import { AppRoutingModule } from './app-routing.module';
 
 // Importar componentes standalone
 import { NavbarComponent } from './navbar/navbar.component';
@@ -14,7 +15,7 @@ import { EnviarCsvComponent } from './enviarcsv/enviarcsv.component';
 import { ConsultarDatosComponent } from './consultardatos/consultardatos.component';
 import { LimpiarCanalComponent } from './limpiar-canal/limpiar-canal.component';
 
-
+ 
 // Definir rutas (✅ Ahora las exportamos)
 export const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -36,8 +37,9 @@ export const routes: Routes = [
     EnviarCsvComponent,
     ConsultarDatosComponent,
     LimpiarCanalComponent,
+	AppRoutingModule,
     MatMenuModule
   ],
-  bootstrap: []
+   bootstrap: [InicioComponent]
 })
 export class AppModule { }
