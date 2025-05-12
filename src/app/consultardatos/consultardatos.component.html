@@ -1,11 +1,14 @@
 <main>
   <section id="mostrar-datos">
     <h2>Datos Recogidos</h2>
+    
+    <!-- Botón de desacarga de todos los datos del canal. Hace una llamada a la función obtenerDatos() del componente thingspeak -->
     <button (click)="obtenerDatos()">Descargar Datos del canal</button>
 
     <table id="tabla-datos">
       <thead>
-        <tr>
+        <tr> 
+          <!-- Cabecera de la tabla -->
           <th>Fecha</th>
           <th>CO2</th>
           <th>Ruido</th>
@@ -15,12 +18,13 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let dato of datos">
-          <td>{{ dato.created_at }}</td>
-          <td>{{ dato.field1 }} ppm</td>
-          <td>{{ dato.field2 }} dB</td>
-          <td>{{ dato.field3 }} lux</td>
-          <td>{{ dato.field4 }} hPa</td>
+        <!-- genera una fila por cada elemento -->
+        <tr *ngFor="let dato of datos"> <!-- Muestra los valores recogidos en cada campo -->
+          <td>{{ dato.created_at }}</td>         
+          <td>{{ dato.field1 }} ppm</td>  
+          <td>{{ dato.field2 }} dB</td>   
+          <td>{{ dato.field3 }} lux</td>  
+          <td>{{ dato.field4 }} hPa</td>  
           <td>{{ dato.field5 }} km/h</td>
         </tr>
       </tbody>

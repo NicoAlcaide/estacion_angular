@@ -1,6 +1,6 @@
 
 import { Component } from '@angular/core';
-import { ThingspeakService } from '../services/thingspeak.service'; // ✅ Importar servicio
+import { ThingspeakService } from '../services/thingspeak.service'; 
 
 @Component({
   selector: 'app-enviarcsv',
@@ -9,7 +9,7 @@ import { ThingspeakService } from '../services/thingspeak.service'; // ✅ Impor
   styleUrls: ['./enviarcsv.component.css']
 })
 export class EnviarCsvComponent {
-  constructor(private thingspeakService: ThingspeakService) {} // ✅ Inyectar servicio
+  constructor(private thingspeakService: ThingspeakService) {} 
 
   archivoSeleccionado: File | null = null;
 
@@ -19,12 +19,12 @@ export class EnviarCsvComponent {
 
   enviarCSV() {
     if (!this.archivoSeleccionado) {
-      alert("❌ Error: No se ha seleccionado ningún archivo CSV.");
+      alert("Error: No se ha seleccionado ningún archivo CSV.");
       return;
     }
 
     this.thingspeakService.enviarCSV(this.archivoSeleccionado)
-      .catch(error => alert(`❌ Hubo un problema al enviar el CSV: ${error.message}`));
+      .catch(error => alert(`Hubo un problema al enviar el CSV: ${error.message}`));
   }
 }
 

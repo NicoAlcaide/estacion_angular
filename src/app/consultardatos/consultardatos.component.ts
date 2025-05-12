@@ -18,7 +18,7 @@ export class ConsultarDatosComponent {
     this.thingspeakService.obtenerDatos()
       .then(feeds => {
         this.datos = feeds || [];
-        console.log("✅ Datos cargados en pantalla:", this.datos);
+        console.log("Datos cargados en pantalla:", this.datos);
       })
       .catch(err => {
         alert(`Error al obtener datos: ${err.message}`);

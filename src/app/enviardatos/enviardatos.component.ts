@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms'; // ✅ Importar FormsModule aquí
-import { ThingspeakService } from '../services/thingspeak.service'; // ✅ Importar el servicio
+import { FormsModule } from '@angular/forms'; // 
+import { ThingspeakService } from '../services/thingspeak.service'; 
 
 @Component({
   selector: 'app-enviardatos',
   standalone: true,
-  imports: [FormsModule], // ✅ Asegurar que FormsModule está en imports
+  imports: [FormsModule], 
   templateUrl: './enviardatos.component.html',
   styleUrls: ['./enviardatos.component.css']
 })
 export class EnviarDatosComponent {
-  constructor(private thingspeakService: ThingspeakService) {} // ✅ Inyectar el servicio
+  constructor(private thingspeakService: ThingspeakService) {} 
 
   datos = { 
     co2: '',
@@ -21,7 +21,7 @@ export class EnviarDatosComponent {
   };
 
   enviarDatos() {
-    this.thingspeakService.enviarDatos(this.datos) // ✅ Llamar a la función en el servicio
+    this.thingspeakService.enviarDatos(this.datos) 
       .then(response => {
         console.log('Respuesta de ThingSpeak:', response);
         alert('Datos enviados correctamente a ThingSpeak!');

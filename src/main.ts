@@ -2,7 +2,7 @@
 
 import { enableProdMode } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideHttpClient } from '@angular/common/http'; // ✅ Importar correctamente
+import { provideHttpClient } from '@angular/common/http'; 
 import { provideRouter } from '@angular/router';
 import { AppComponent } from './app/app.component';
 import { routes } from './app/app.module';
@@ -14,7 +14,7 @@ import { InicioComponent } from './app/inicio/inicio.component';
 import { EnviarDatosComponent } from './app/enviardatos/enviardatos.component';
 import { EnviarCsvComponent } from './app/enviarcsv/enviarcsv.component';
 import { ConsultarDatosComponent } from './app/consultardatos/consultardatos.component';
-import { ThingspeakService } from './app/services/thingspeak.service'; // ✅ Importar servicio
+import { ThingspeakService } from './app/services/thingspeak.service'; // Importa el servicio de la API
 import { FormsModule } from '@angular/forms'; 
 
 if (environment.production) {
@@ -23,9 +23,9 @@ if (environment.production) {
 
 bootstrapApplication(AppComponent, {
   providers: [
-    provideHttpClient(), // ✅ Asegurar que esté registrado correctamente
+    provideHttpClient(), 
     provideRouter(routes),
-    ThingspeakService, // ✅ Registrar el servicio aquí
+    ThingspeakService, 
     NavbarComponent,
     HeaderComponent,
     FooterComponent,

@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MatMenuModule } from '@angular/material/menu';
 import { AppRoutingModule } from './app-routing.module';
 
-// Importar componentes standalone
+// Importar componentes standalone, los míos
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,7 +16,7 @@ import { ConsultarDatosComponent } from './consultardatos/consultardatos.compone
 import { LimpiarCanalComponent } from './limpiar-canal/limpiar-canal.component';
 
  
-// Definir rutas (✅ Ahora las exportamos)
+// Definir rutas 
 export const routes: Routes = [
   { path: '', component: InicioComponent },
   { path: 'enviodatos', component: EnviarDatosComponent },

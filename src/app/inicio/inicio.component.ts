@@ -11,15 +11,15 @@ import { CommonModule } from '@angular/common';
 })
 
 export class InicioComponent {
-  constructor(private thingspeakService: ThingspeakService) {} // ✅ Inyectar el servicio
+  constructor(private thingspeakService: ThingspeakService) {} 
 
   limpiarDatos() {
     this.thingspeakService.limpiarCanal()
       .then(() => {
-        alert("✅ Canal de ThingSpeak limpiado correctamente!");
+        alert("Canal de ThingSpeak limpiado correctamente!");
       })
       .catch(err => {
-        alert(`❌ Error al limpiar el canal: ${err.message}`);
+        alert(`Error al limpiar el canal: ${err.message}`);
       });
   }
 }
