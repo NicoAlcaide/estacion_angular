@@ -14,7 +14,7 @@ import { InicioComponent } from './app/inicio/inicio.component';
 import { EnviarDatosComponent } from './app/enviardatos/enviardatos.component';
 import { EnviarCsvComponent } from './app/enviarcsv/enviarcsv.component';
 import { ConsultarDatosComponent } from './app/consultardatos/consultardatos.component';
-import { LimpiarCanalComponent } from './app/limpiar-canal/limpiar-canal.component';
+//import { LimpiarCanalComponent } from './app/limpiar-canal/limpiar-canal.component';
 import { ThingspeakService } from './app/services/thingspeak.service'; // Importa el servicio de la API
 import { FormsModule } from '@angular/forms'; 
 
@@ -33,8 +33,8 @@ bootstrapApplication(AppComponent, {
     InicioComponent,
     EnviarDatosComponent,
 	EnviarCsvComponent,
-    ConsultarDatosComponent,
-	LimpiarCanalComponent
+    ConsultarDatosComponent
+	//LimpiarCanalComponent
   ]
 }).catch(err => console.error(err));
 

@@ -13,7 +13,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { EnviarDatosComponent } from './enviardatos/enviardatos.component';
 import { EnviarCsvComponent } from './enviarcsv/enviarcsv.component';
 import { ConsultarDatosComponent } from './consultardatos/consultardatos.component';
-import { LimpiarCanalComponent } from './limpiar-canal/limpiar-canal.component';
+//import { LimpiarCanalComponent } from './limpiar-canal/limpiar-canal.component';
 
  
 // Definir rutas 
@@ -36,7 +36,7 @@ export const routes: Routes = [
     EnviarDatosComponent,
     EnviarCsvComponent,
     ConsultarDatosComponent,
-    LimpiarCanalComponent,
+   // LimpiarCanalComponent,
 	AppRoutingModule,
     MatMenuModule
   ],
